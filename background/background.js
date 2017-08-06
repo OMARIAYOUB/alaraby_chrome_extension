@@ -112,7 +112,7 @@ function disconnect(){
 chrome.webNavigation.onBeforeNavigate.addListener(function(evt){
       chrome.tabs.get(evt.tabId, function(tab){ 
 	  
-	  var hh = tab.url.indexOf("alaraby.co.uk") > -1
+	  var hh = tab.url.indexOf("URL_OF_SITE") > -1
 	  
       var host = "";
 	   chrome.proxy.settings.get({ }, function (e) {
